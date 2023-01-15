@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+#pepapig {
+    color:#0AF511;
+    transform: translate(-50%, -50%);
+    animation:
+    morph-effect 3s
+    infinite ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#pepapig:nth-child(1) {
+    animation-delay: -3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#pepapig:nth-child(2) {
+    animation-delay: -5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes morph-effect {
+    0%, 20%, 100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+    40%, 80% {
+        filter: blur(16px);
+        opacity: 0;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+#nelsoncrick {
+    color: #202329 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#duvan {
+    background-color: #0AF511;
+}
+
+#pepapig2 {
+    color: #0AF511;
+    animation:
+    morph-effect 3s
+    infinite ease-in-out;
+}
+
+#effect1 {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 30ch;
+
+    animation: typing 2s steps(12), 
+    blink .1s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+#effect2 {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 20ch;
+
+    animation: typing 1s steps(18), 
+    blink .1s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    0% { border-color: transparent }
 }
